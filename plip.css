@@ -1,0 +1,36 @@
+body {
+    background-color: #FFFCF3;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.star6 {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    cursor: pointer;
+    animation: spin 6s linear infinite;
+}
+
+@keyframes spin{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+div {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-style: italic;
+    color: #61A617;
+    margin-bottom: 20px;
+}
