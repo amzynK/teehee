@@ -6,6 +6,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=148065), auto;
 }
 
 .star6 {
@@ -14,7 +15,7 @@ body {
     display: block;
     margin: 0 auto;
     object-fit: cover;
-    cursor: pointer;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=207288), auto;
     animation: spin 6s linear infinite;
 }
 
@@ -33,4 +34,22 @@ h1 {
     font-style: italic;
     color: #61A617;
     margin-bottom: 20px;
+}
+
+/* Style for the elements that form the trail */
+.trail-dot {
+    position: absolute;
+    /* Set the size to fit your GIF */
+    width: 45px;
+    height: 45px;
+
+    /* Load your GIF image */
+    background-image: url('kitty.gif');
+    background-size: cover; /* Make sure the GIF fills the space */
+    
+    border-radius: 0; /* No rounding, keep the GIF shape */
+    pointer-events: none;
+    opacity: 1; /* Keep the trail visible until it fades out */
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    z-index: 9999;
 }
